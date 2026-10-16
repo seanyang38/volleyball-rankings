@@ -6,3 +6,5 @@
 /docs/*
 !/docs/index.html
 !/docs/.nojekyll
+
+!/docs/simulation.html
