@@ -1,0 +1,8 @@
+# Only the public hosting files below belong in Git.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+/docs/*
+!/docs/index.html
+!/docs/.nojekyll
