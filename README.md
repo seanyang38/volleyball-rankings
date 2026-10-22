@@ -5,9 +5,9 @@ Public site: https://seanyang38.github.io/volleyball-rankings/
 A self-contained static site with two tabs:
 
 - **Rankings:** team ratings, profiles, match histories and trajectories.
-- **Season tracker:** tournament-level accuracy and aggregate comparison counts, using frozen pre-event forecasts.
+- **Season tracker:** tournament-level accuracy and aggregate comparison counts, using frozen pre-event model forecasts and tournament opening seeds.
 
-The public tracker shows aggregate results only. Match predictions, detailed analysis and original snapshots remain local. It does not include TruVolley rating values, ranking lists, snapshot downloads, roster audits or internal reports. An independence and experimental-analysis notice appears in the site footer. Simulations remain local and are no longer published.
+The public tracker shows aggregate results only. Match predictions, detailed analysis and original snapshots remain local. It does not include third-party rating values, ranking lists, snapshot downloads, roster audits or internal reports. An independence and experimental-analysis notice appears in the site footer. Simulations remain local and are no longer published.
 
 ## GitHub Pages
 
@@ -36,3 +36,6 @@ git push
 ```
 
 The source scripts and private evaluation data exist only in the local analysis workspace; this hosting repository contains the finished page. The exporter validates the public payload and removes the retired Simulation endpoint. Keep the root Git allowlist and never force-add local analysis folders or archives.
+
+
+The public baseline is Tournament Seeding: lower opening seed number predicts the winner. It is calculated independently from TM2 opening-pool assignments and actual results, without using another rating system as a substitute. The current opening seeds were reconstructed after the event; the footer discloses this. Historical internal evaluations remain unchanged.
